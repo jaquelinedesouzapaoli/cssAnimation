@@ -1,0 +1,100 @@
+.row-solucoes {
+    margin-top: 6.3rem;
+    margin-bottom: 6.3rem;
+}
+@media (min-width: 992px) {
+    .animation {
+        display: block;
+    }
+}
+.animation {
+    margin: 0;
+    padding: 0;
+    height: 500px;
+    /*display: none;*/
+}
+.animation .sun {
+    height: 160px;
+    width: 160px;
+    background: url(../../../../../wp-includes/images/animation-center.webp);
+    border-radius: 50%;
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.animation .first-outline {
+    height: 300px;
+    width: 300px;
+    z-index: 2;
+}
+.animation .first-outline, .animation .second-outline, .animation .third-outline {
+    border-radius: 50%;
+    border: 1px solid rgba(221, 221, 221, .6);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: unset;
+    position: absolute;
+}
+.animation .second-outline {
+    height: 440px;
+    width: 440px;
+}
+.animation .first-outline .first {
+    animation: orbit 26s linear infinite;
+}
+.animation .first-outline .first, .animation .first-outline .second {
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}
+.animation .first-outline .second {
+    animation: orbit2 26s linear infinite;
+}
+.animation .first-outline .first, .animation .first-outline .second {
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}
+.animation .first-outline a {
+    cursor: pointer;
+}
+.animation .first-outline .impar-line {
+    padding: 12px;
+    border-radius: 16px;
+    background: #7b61ff;
+    box-shadow: 0 10px 20px 0 rgba(25, 22, 27, .1);
+}
+.animation .second-outline .third {
+    animation: orbit3 26s 5s linear infinite;
+    transform: rotate(0) translateX(-220px) rotate(0);
+}
+.animation .second-outline .fourth, .animation .second-outline .third {
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+}
+.animation .second-outline .fourth {
+    animation: orbit4 26s 5s linear infinite;
+    transform: rotate(-360deg) translateX(220px) rotate(360deg);
+}
+.animation .second-outline a {
+    cursor: pointer;
+}
+.animation .second-outline .par-line {
+    padding: 12px;
+    border-radius: 16px;
+    background: #ff7913;
+    box-shadow: 0 10px 20px 0 rgba(25, 22, 27, .1);
+}
+img{
+    max-width: 100%;
+}
