@@ -1,18 +1,18 @@
-# 🌌 Sistema Solar - Animação CSS  
+# 🌌 Solar System - CSS Animation
 
-Este é um pequeno projeto de animação CSS que simula um sistema solar usando HTML, CSS e LESS. Os planetas(Ou ícones) giram ao redor do sol(você pode adicionar uma logo), criando um efeito dinâmico e visualmente interessante.  
+This is a small CSS animation project that simulates a solar system using HTML, CSS, and LESS. The planets (or icons) rotate around the sun (you can add a logo), creating a dynamic and visually interesting effect.
 
-## 🚀 Tecnologias Utilizadas  
+## 🚀 Technologies Used  
 - HTML5  
 - CSS3  
 - LESS  
 
-## 🎬 Pré-visualização  
+## 🎬 Preview  
+![Animation Preview](images/output.gif)
 
+## 📦 How to Use  
 
-## 📦 Como Usar  
-
-1. Clone este repositório: git clone https://github.com/jaquelinedesouzapaoli/cssAnimation.git  
-2. Entre no repositório: cd nomedoprojeto
-3. Instale o Less caso ainda não tenha instalado: npm install -g less
-4. A Cada alteração feita no arquivo .less compile o arquivo Less para css: lessc stylesheet.less stylesheet.css
+1. Clone this repository: `git clone https://github.com/jaquelinedesouzapaoli/cssAnimation.git`
+2. Navigate to the project directory: `cd projectname`
+3. Install LESS if you haven’t already: `npm install -g less`
+4. After making changes to the `.less` file, compile the LESS file to CSS: `lessc stylesheet.less stylesheet.css`
