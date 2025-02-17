@@ -1,0 +1,140 @@
+body {
+    background: url(images/ceu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.row-solucoes {
+    margin-top: 6.3rem;
+    margin-bottom: 6.3rem;
+}
+@media (min-width: 992px) {
+    .animation {
+        display: block;
+    }
+}
+.animation {
+    margin: 0;
+    padding: 0;
+    height: 500px;
+
+    .sun {
+        height: 160px;
+        width: 160px;
+        background: url(images/sol.webp);
+        border-radius: 50%;
+        background-size: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .first-outline {
+        height: 300px;
+        width: 300px;
+        z-index: 2;
+
+        .first {
+            animation: orbit 26s linear infinite;
+        }
+
+        .second {
+            animation: orbit2 26s linear infinite;
+        }
+
+        .first, .second {
+            height: 64px;
+            width: 64px;
+            position: absolute;
+            left: 40%;
+            top: 40%;
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        .impar-line {
+            padding: 12px;
+            border-radius: 16px;
+            background: #7b61ff;
+            box-shadow: 0 10px 20px 0 rgba(25, 22, 27, .1);
+        }
+    }
+
+    .second-outline {
+        height: 440px;
+        width: 440px;
+
+        .third {
+            animation: orbit3 26s 5s linear infinite;
+            transform: rotate(0) translateX(-220px) rotate(0);
+        }
+
+        .fourth, .third {
+            height: 64px;
+            width: 64px;
+            position: absolute;
+            left: 40%;
+            top: 40%;
+        }
+
+        .fourth {
+            animation: orbit4 26s 5s linear infinite;
+            transform: rotate(-360deg) translateX(220px) rotate(360deg);
+        }
+
+        a {
+            cursor: pointer;
+        }
+
+        .par-line {
+            padding: 12px;
+            border-radius: 16px;
+            background: #ff7913;
+            box-shadow: 0 10px 20px 0 rgba(25, 22, 27, .1);
+        }
+    }
+
+    .first-outline, .second-outline, .third-outline {
+        border-radius: 50%;
+        border: 1px solid rgba(221, 221, 221, .6);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: unset;
+        position: absolute;
+    }
+}
+
+img{
+    max-width: 100%;
+}
+.lazyloaded {
+    opacity: 1;
+    transition: opacity 400ms;
+    transition-delay: 0ms;
+}
+
+/* CSS Animation */
+@keyframes orbit{
+    from{
+        transform:rotate(0) translateX(-150px) rotate(0)
+    }to{
+        transform:rotate(360deg) translateX(-150px) rotate(-360deg)}
+    }
+@keyframes orbit2{
+    from{
+        transform:rotate(-360deg) translateX(150px) rotate(360deg)
+    }to{
+        transform:rotate(0) translateX(150px) rotate(0)}}
+@keyframes orbit3{
+    from{
+        transform:rotate(0) translateX(-220px) rotate(0)
+    }to{
+        transform:rotate(360deg) translateX(-220px) rotate(-360deg)}}
+@keyframes orbit4{
+    from{
+        transform:rotate(-360deg) translateX(220px) rotate(360deg)
+    }to{
+        transform:rotate(0) translateX(220px) rotate(0)}}
